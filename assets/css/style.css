@@ -1,0 +1,82 @@
+.top-bar {
+    width: 100%;
+    padding: 16px 0;
+    background: #681F3C;
+}
+.top-bar .logo {
+    width: 200px;
+}
+.top-bar .logo p {
+    color: white;
+    font-size: 36px;
+    font-family: "Mouse Memoirs", sans-serif;
+    margin: 0;
+}
+.top-bar .navigation {
+    width: auto;
+}
+.top-bar .navigation nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-bar .navigation nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding: 8px 8px 8px 8px;
+    margin: 6px;
+}
+.top-bar .navigation nav ul li a:hover {
+    border-bottom: 1px solid white;
+}
+
+.article {
+    box-shadow: 2px 2px 5px black;
+    padding: 15px;
+    border-radius: 8px;
+    max-width: 360px;
+    float: left;
+    margin: 8px;
+}
+
+
+.header-home {
+    min-height: 64vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-home h1, .header-home h2, .header-home p {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 2px 5px black;
+    max-width: 960px;
+    margin: 15px;
+}
+.header-home h1 {
+    font-size: 48px;
+    margin: 0;
+}
+.header-home h2 {
+    font-size: 24px;
+    margin: 0;
+}
+.header-home p {
+    padding: 10px 30px;
+    background: rgba(0,0,0,0.5);
+    font-size: 18px;
+    text-shadow: none;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 640px) {
+    .top-bar .flex-row {
+        flex-direction: column;
+    }
+}
